@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">AAK.Fashion</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container">
+  <h3>choose your stylish clothes</h3>
+</div>
+
+</body>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body{background-color: darksalmon;}
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>AAK Exclusive HandPicked</h2>
+    <p>take your favorite decision and add to cart.</p>
+    
+    <div class="row">
+      <div class="column">
+        <div class="card">
+        <img src="images/men-s-high-neck-jacket-500x500.jpg" alt="Denim Jeans" style="width:100%">
+        <h3>AAK Fashion</h3>
+         <p class="price">$19.99</p>
+         <p>Creative directort's shaped from soft shearling with wide notch lapels and a diagonal front zip .</p>
+         <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+          <img src="images/51ZrRqkPVgL._AC_UL1024_.jpg" alt="Denim Jeans" style="width:100%">
+          <h3>AAK Fashion</h3>
+           <p class="price">$8.99</p>
+           <p>Long Sleeves Casual Winter Warm Fashion V-Neck Chiffon Solid Soft Loose Ladies T-Shirts Tops .</p>
+           <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+              <img src="images/download.jpg" alt="Denim Jeans" style="width:100%">
+              <h3>AAK Fashion</h3>
+               <p class="price">$5.50</p>
+               <p>old skool .</p>
+               <p><button>Add to Cart</button></p>
+              </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                  <img src="images/pri_175_p-1565275551.webp" alt="Denim Jeans" style="width:100%">
+                  <h3>AAK Fashion</h3>
+                   <p class="price">$40.00</p>
+                   <p>Boat Neck Embellished Yoke Bodycon Dress .</p>
+                   <p><button>Add to Cart</button></p>
+                  </div>
+                </div>
+                
+}
+<head>
+  <style>
+
+.clock {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%);
+    color:darkslategray;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+
+}
+  </style>
+</head>
+<body>
+  <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+  <script>
+    function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
+  </script>
+</body>
+
+      
+      
+      
+      
+    </body>
+    </html>
