@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click on.</p>
+
+<button onclick="myFunction()">here please</button>
+
+<p id="demo"></p>
+
+<script>
+var words= ["Ameer", "Sulieman", "Abo", "Khadijeh"];
+document.getElementById("demo").innerHTML = words;
+
+function myFunction() {
+  words.reverse();
+  document.getElementById("demo").innerHTML = words;
+}
+</script>
+
+</body>
+</html>
